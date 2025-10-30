@@ -1,2 +1,2 @@
 # SGPA-Calculator
-SGPA Calculator for Aktu students of b.tech
+SGPA Calculator for B.tech students of AKTU
