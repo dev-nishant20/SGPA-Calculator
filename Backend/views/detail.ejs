@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA CALCULATOR</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>SGPA Calculator</h1>
+            <p>Select your subjects and corresponding grades</p>
+        </div>
+        <div class="form-container">
+            <form method="post" action="http://localhost:8080/cal">
+                <% for(let i = 1; i <= subjects; i++) { %>
+                    <% if(i <= 9) { %>
+                        <div class="form-row">
+                            <div class="custom-select">
+                                <select name="subject" required>
+                                    <option value="" disabled selected>Select subject</option>
+                                    <option value="Chemistry">Chemistry</option>
+                                    <option value="Mathematics-2">Mathematics-II</option>
+                                    <option value="Electronics">Electronics</option>
+                                    <option value="Mechanical">Mechanical</option>
+                                    <option value="EVS">EVS</option>
+                                    <option value="chemLab">Chemistry Lab</option>
+                                    <option value="ElecLab">Electronics Lab</option>
+                                    <option value="engLangLab">English Language Lab</option>
+                                    <option value="WokshopMech">Mechenical Workshop</option>
+                                    <option value="Physics">Physics</option>
+                                    <option value="Mathematics-1">Mathematics-I</option>
+                                    <option value="FEE">FEE</option>
+                                    <option value="PPS">PPS</option>
+                                    <option value="SoftSkills">Soft Skills</option>
+                                    <option value="PhyLab">Physics Lab</option>
+                                    <option value="FeeLab">FEE Lab</option>
+                                    <option value="PpsLab">PPS Lab</option>
+                                    <option value="ED">ED</option>
+                                </select>
+                            </div>
+                            <div class="custom-select">
+                                <select name="grade" required>
+                                    <option value="" disabled selected>Select grade</option>
+                                    <option value="A+">A+</option>
+                                    <option value="A">A</option>
+                                    <option value="B+">B+</option>
+                                    <option value="B">B</option>
+                                    <option value="C">C</option>
+                                    <option value="D">D</option>
+                                    <option value="F">F</option>
+                                </select>
+                            </div>
+                        </div>
+                    <% } %>
+                <% } %>
+                <div class="btn-container">
+                    <button class="submit-btn">Calculate SGPA</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

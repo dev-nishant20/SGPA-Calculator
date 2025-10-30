@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGPA CALCULATOR</title>
+    <style>
+
+        .container {
+            background: linear-gradient(to right, #3498db, #2ecc71);
+            color: aliceblue;
+            width: 100%;
+            max-width: 800px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin: 40vh auto;
+        }
+
+        .container h1{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Your SGPA is : <%= sgpa.toFixed(2) %></h1>
+    </div>
+</body>
+</html>

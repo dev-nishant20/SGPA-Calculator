@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: #f5f5f5;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.header {
+    color: white;
+    padding: 25px 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 16px;
+    opacity: 0.9;
+}
+
+.form-container {
+    padding: 30px;
+    background: white;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+
+.inp {
+    width: 100%;
+    padding: 14px 15px;
+    border: 2px solid #e8f0fe;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 15px;
+    color: #333;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.inp:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.inp::placeholder {
+    color: #999;
+}
+
+.btn-container {
+    margin-top: 10px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(to right, #148bdb, #14d866);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+footer h3 {
+    color: #333;
+    font-weight: 500;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        max-width: none;
+    }
+    
+    .header h1 {
+        font-size: 24px;
+    }
+    
+    .header p {
+        font-size: 14px;
+    }
+    
+    .form-container {
+        padding: 25px;
+    }
+    
+    body {
+        padding: 15px;
+    }
+}
