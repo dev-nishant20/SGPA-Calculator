@@ -97,6 +97,10 @@ app.post("/cal" , (req,res) => {
 
 });
 
+app.get("/",(req,res)=>{
+    res.send("Backend is running successfully");
+});
+
 app.listen(port, () => {
     console.log(`app listening on port ${port}`);
 });
