@@ -98,7 +98,7 @@ app.post("/cal" , (req,res) => {
 });
 
 app.get("/",(req,res)=>{
-    res.render("error.ejs");
+    res.render("sgpa-calculator-eight.vercel.app");
 });
 
 app.listen(port, () => {
