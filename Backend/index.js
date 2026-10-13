@@ -98,7 +98,7 @@ app.post("/cal" , (req,res) => {
 });
 
 app.get("/",(req,res)=>{
-    res.render("index.html");
+    res.render("../frontend/index.html");
 });
 
 app.listen(port, () => {
