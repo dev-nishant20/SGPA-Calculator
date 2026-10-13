@@ -98,7 +98,7 @@ app.post("/cal" , (req,res) => {
 });
 
 app.get("/",(req,res)=>{
-    res.send("Backend is running successfully");
+    res.render("error.ejs");
 });
 
 app.listen(port, () => {
